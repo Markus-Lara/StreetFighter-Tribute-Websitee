@@ -1,0 +1,49 @@
+/* hide the checkboxes */
+.modal-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* base modal overlay (hidden by default) */
+.modal-toggle + .char-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+}
+
+/* show when its checkbox is checked */
+.modal-toggle:checked + .char-modal {
+  display: flex;
+}
+
+.char-modal-content {
+  width: 80%;
+  max-width: 900px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 20px;
+  padding: 2rem;
+  position: relative;
+}
+
+/* close button */
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  left: 1rem; /* change to right if you like */
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* make the label card clickable */
+.char-card {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
