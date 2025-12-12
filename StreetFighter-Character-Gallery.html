@@ -24,111 +24,20 @@
   </header>
 
     <main>
-  <section class="character-gallery" aria-labelledby="gallery-title">
-    <h1 id="gallery-title">Staples and Most Iconic SF Characters</h1>
-
-    <div class="gallery-grid">
-      <figure class="char-card">
-        <img src="Png/RyuGallery.png" alt="Ryu">
-        <figcaption>Ryu</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/KenGallery.png" alt="Ken">
-        <figcaption>Ken</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/CammyGallery.png" alt="Cammy">
-        <figcaption>Cammy</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/ChunLiGallery.png" alt="Chun-Li">
-        <figcaption>Chun‑Li</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/VegaGallery.png" alt="Vega">
-        <figcaption>Vega</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/DhalsimGallery.png" alt="Dhalsim">
-        <figcaption>Dhalsim</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/BlankaGallery.png" alt="Blanka">
-        <figcaption>Blanka</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/M.BisonGallery.png" alt="M. Bison">
-        <figcaption>M. Bison</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/E.HondaGallery.png" alt="E. Honda">
-        <figcaption>E. Honda</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/BalrogGallery.png" alt="Balrog">
-        <figcaption>Balrog</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/GuileGallery.png" alt="Guile">
-        <figcaption>Guile</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/SakuraGallery.png" alt="Sakura">
-        <figcaption>Sakura</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/DanGallery.png" alt="Dan">
-        <figcaption>Dan</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/AkumaGallery.png" alt="Akuma">
-        <figcaption>Akuma</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/ZangiefGallery.png" alt="Zangief">
-        <figcaption>Zangief</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/SagatGallery.png" alt="Sagat">
-        <figcaption>Sagat</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/DudleyGallery.png" alt="Dudley">
-        <figcaption>Dudley</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/IbukiGallery.png" alt="Ibuki">
-        <figcaption>Ibuki</figcaption>
-      </figure>
-
-      <figure class="char-card">
-        <img src="Png/JuriGallery.png" alt="Juri">
-        <figcaption>Juri</figcaption>
-      </figure>
-    </div>
-  </section>
+  
 
   <section class="character-gallery" aria-labelledby="gallery-title">
   <h1 id="gallery-title">Staples and Most Iconic SF Characters</h1>
 
   <div class="gallery-grid">
+    <!-- Cammy card -->
+    <figure class="char-card">
+        <a href="Favorite-Character.html">
+          <img src="Png/CammyGallery.png" alt="Cammy">
+        </a>
+        <figcaption>Cammy</figcaption>
+      </figure>
+
     <!-- Ryu card -->
     <label class="char-card" for="ryu-toggle">
       <img src="Png/RyuGallery.png" alt="Ryu">
@@ -228,8 +137,809 @@
       </article>
     </section>
 
+
+    <!-- Chun-Li card -->
+    <label class="char-card" for="chun-li-toggle">
+      <img src="Png/ChunLiGallery.png" alt="Chun-li">
+      <span class="char-name">Chun-Li</span>
+    </label>
+    <input type="checkbox" id="chun-li-toggle" class="modal-toggle">
+
+    <!-- Chun-li popup -->
+    <section class="char-modal" aria-labelledby="chun-li-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="chun-li-toggle" class="modal-close" aria-label="Close Chun-li details">&times;</label>
+
+        <h2 id="chun-li-title">Chun-Li</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Chun-LiProfilePicture.png" alt="Chun-Li portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "Yatta!" </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Interpol detective from China, seeking justice and revenge for her father’s disappearance.</p>
+          <p><strong>Debut:</strong> 1991, Street Fighter II.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>First female fighter in the series and the genre; frequent rival of M. Bison.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Chun-Li-Win-Pose.gif" alt="Chun-Li victory pose">
+          </figure>
+          <figure>
+            <figcaption>Lightening Kicks</figcaption>
+            <img src="Gif/Chun-Lighting-Kicks.gif" alt="Chun-Li performing Lightening Kicks">
+          </figure>
+          <figure>
+            <figcaption>Spinning Bird Kick</figcaption>
+            <img src="Gif/Chun-Li-Spinning-Bird-Kick.gif" alt="Chun-Li performing Spinning Bird Kick">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Vega card -->
+    <label class="char-card" for="vega-toggle">
+      <img src="Png/VegaGallery.png" alt="Vega">
+      <span class="char-name">Vega</span>
+    </label>
+    <input type="checkbox" id="vega-toggle" class="modal-toggle">
+
+    <!-- Vega popup -->
+    <section class="char-modal" aria-labelledby="vega-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="vega-toggle" class="modal-close" aria-label="Close Vega details">&times;</label>
+
+        <h2 id="vega-title">Vega</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Vega-Profile-Picture.png" alt="Vega portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "Victory is beautiful" and "Beauty is Power!" </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Spanish ninja and assassin obsessed with beauty.</p>
+          <p><strong>Debut:</strong> 1991, Street Fighter II.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Uses a claw and mask, moves quickly on the wall.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Vega-Pose.gif" alt="Vega victory pose">
+          </figure>
+          <figure>
+            <figcaption>Flying Barcelona Attack</figcaption>
+            <img src="Gif/Vega-Barcelona-Attack.gif" alt="Vega performing Flying Barcelona Attack">
+          </figure>
+          <figure>
+            <figcaption>Claw Slash</figcaption>
+            <img src="Gif/Vega-Claw-Slash.gif" alt="Vega performing Claw Slash">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Dhalsim card -->
+    <label class="char-card" for="dhalsim-toggle">
+      <img src="Png/DhalsimGallery.png" alt="dhalsim">
+      <span class="char-name">Dhalsim</span>
+    </label>
+    <input type="checkbox" id="dhalsim-toggle" class="modal-toggle">
+
+    <!-- Dhalsim popup -->
+    <section class="char-modal" aria-labelledby="dhalsim-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="dhalsim-toggle" class="modal-close" aria-label="Close Dhalsim details">&times;</label>
+
+        <h2 id="dhalsim-title">Dhalsim</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Dhalsim-Profile-Picture.png" alt="Dhalsim portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong>  "I will meditate and then destroy you” </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Indian yoga master and pacifist fighting for his village's well-being.</p>
+          <p><strong>Debut:</strong> 1991, Street Fighter II.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Often depicted as meditative, fights only for a noble cause.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Dhalsim-Victory-Pose.gif" alt="Dhalsim victory pose">
+          </figure>
+          <figure>
+            <figcaption>Yoga Fire</figcaption>
+            <img src="Gif/Dhalsim-Yoga-Fire.gif" alt="Dhalsim performing Yoga Fire">
+          </figure>
+          <figure>
+            <figcaption>Yoga Flame</figcaption>
+            <img src="Gif/Dhalsim-Yoga-Flame.gif" alt="Dhalsim performing Yoga Flame">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Dudley card -->
+    <label class="char-card" for="dudley-toggle">
+      <img src="Png/DudleyGallery.png" alt="dhalsim">
+      <span class="char-name">Dudley</span>
+    </label>
+    <input type="checkbox" id="dudley-toggle" class="modal-toggle">
+
+    <!-- Dudley popup -->
+    <section class="char-modal" aria-labelledby="dudley-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="dudley-toggle" class="modal-close" aria-label="Close Dudley details">&times;</label>
+
+        <h2 id="dudley-title">Dudley</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Dudley-Profile-Picture.png" alt="Dudley portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> “Gutter trash!”. </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Classy English heavyweight boxer on a quest to retrieve his father’s car.</p>
+          <p><strong>Debut:</strong> 1999, Street Fighter III: 2nd Impact.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Distinct for never using kicks, entirely boxing-based moveset; rival to Balrog.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Dudley-Pose.gif" alt="Dudley victory pose">
+          </figure>
+          <figure>
+            <figcaption>Machinegun Blow</figcaption>
+            <img src="Gif/Dudley-Machinegun-Blow.gif" alt="Dudely performing Machinegun Blow">
+          </figure>
+          <figure>
+            <figcaption>Corkscrew Blow</figcaption>
+            <img src="Gif/Dudley-Corkscrew-Blow.gif" alt="Dudley performing Corkscrew Blow">
+          </figure>
+        </section>
+      </article>
+    </section>
     
 
+     <!-- Blanka card -->
+    <label class="char-card" for="blanka-toggle">
+      <img src="Png/BlankaGallery.png" alt="blanka">
+      <span class="char-name">Blanka</span>
+    </label>
+    <input type="checkbox" id="blanka-toggle" class="modal-toggle">
+
+    <!-- Blanka popup -->
+    <section class="char-modal" aria-labelledby="blanka-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="blanka-toggle" class="modal-close" aria-label="Close Blanka details">&times;</label>
+
+        <h2 id="blanka-title">Blanka</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Blanka-Profile-Picture.png" alt="Blanka portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> “Rahhhh!” </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Wild man from Brazil, mutated by an airplane crash and raised in the jungle.</p>
+          <p><strong>Debut:</strong> 1991, Street Fighter II.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Real name Jimmy; known for biting and electricity attacks.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Blanka-Pose.gif" alt="Blanka victory pose">
+          </figure>
+          <figure>
+            <figcaption>Electric Thunder</figcaption>
+            <img src="Gif/Blanka-Electric-Thunder.gif" alt="Blanka performing Electric Thunder">
+          </figure>
+          <figure>
+            <figcaption>Rolling Attack</figcaption>
+            <img src="Gif/Blanka-Rolling-Attack.gif" alt="Blanka performing Rolling Attack">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- M.Bison card -->
+    <label class="char-card" for="m.bison-toggle">
+      <img src="Png/M.BisonGallery.png" alt="m.bison">
+      <span class="char-name">M.Bison</span>
+    </label>
+    <input type="checkbox" id="m.bison-toggle" class="modal-toggle">
+
+    <!-- M.Bison popup -->
+    <section class="char-modal" aria-labelledby="m.bison-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="m.bison-toggle" class="modal-close" aria-label="Close m.bison details">&times;</label>
+
+        <h2 id="m.bison-title">M.Bison</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/M.Bison-Profile-Picture.png" alt="M.Bison portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "Now face the mighty Bison!" </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Evil mastermind and leader of Shadaloo criminal organization.</p>
+          <p><strong>Debut:</strong> 1991, Street Fighter II (final boss).</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Changes bodies to prolong his life; main series villain.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/M.Bison-Pose.gif" alt="M.Bison victory pose">
+          </figure>
+          <figure>
+            <figcaption>Psycho Crusher</figcaption>
+            <img src="Gif/M.Bison-Psycho-Crusher.gif" alt="M.Bison performing Psycho Crusher">
+          </figure>
+          <figure>
+            <figcaption>Scissor Kick</figcaption>
+            <img src="Gif/M.Bison-Scissor-Kick.gif" alt="M.Bison performing Scissor Kick">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- E.Honda card -->
+    <label class="char-card" for="e.honda-toggle">
+      <img src="Png/E.HondaGallery.png" alt="e.honda">
+      <span class="char-name">E.Honda</span>
+    </label>
+    <input type="checkbox" id="e.honda-toggle" class="modal-toggle">
+
+    <!-- E.Honda popup -->
+    <section class="char-modal" aria-labelledby="e.honda-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="e.honda-toggle" class="modal-close" aria-label="Close E.Honda details">&times;</label>
+
+        <h2 id="e.honda-title">E.Honda</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/E.Honda-Profile-Picture.png" alt="E.Honda portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "You hungry? Here's some beef!" </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Sumo wrestler striving to prove sumo’s worth internationally.</p>
+          <p><strong>Debut:</strong> 1991, Street Fighter II.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Baths often feature in his endings; friendly rivalry with Zangief.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/E.Honda-Win-Pose-1.gif" alt="E.Honda victory pose">
+          </figure>
+          <figure>
+            <figcaption>Hundred Hand Slap</figcaption>
+            <img src="Gif/E.Honda-Handslap.gif" alt="E.Honda performing Hundred Hand Slap">
+          </figure>
+          <figure>
+            <figcaption>Sumo Headbutt</figcaption>
+            <img src="Gif/E.Honda-Headbutt.gif" alt="E.Honda performing Sumo Headbutt">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Balrog card -->
+    <label class="char-card" for="balrog-toggle">
+      <img src="Png/BalrogGallery.png" alt="balrog">
+      <span class="char-name">Balrog</span>
+    </label>
+    <input type="checkbox" id="balrog-toggle" class="modal-toggle">
+
+    <!-- Balrog popup -->
+    <section class="char-modal" aria-labelledby="balrog-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="balrog-toggle" class="modal-close" aria-label="Close Balrog details">&times;</label>
+
+        <h2 id="balrog-title">Balrog</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Balrog-Profile-Picture.png" alt="Balrog portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "I’ll make you pay!” </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Ruthless Las Vegas boxer expelled from pro fighting for violence.</p>
+          <p><strong>Debut:</strong> 1991, Street Fighter II.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Inspired by Mike Tyson, loves money over honor.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Balrog-Pose.gif" alt="Balrog victory pose">
+          </figure>
+          <figure>
+            <figcaption>Turn Punch</figcaption>
+            <img src="Gif/Balrog-Turn-Punch.gif" alt="Balrog performing Turn Punch">
+          </figure>
+          <figure>
+            <figcaption>Dash Straight</figcaption>
+            <img src="Gif/Balrog-Dash-Straight.gif" alt="Balrog performing Dash Straight">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Guile card -->
+    <label class="char-card" for="guile-toggle">
+      <img src="Png/GuileGallery.png" alt="guile">
+      <span class="char-name">Guile</span>
+    </label>
+    <input type="checkbox" id="guile-toggle" class="modal-toggle">
+
+    <!-- Guile popup -->
+    <section class="char-modal" aria-labelledby="guile-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="guile-toggle" class="modal-close" aria-label="Close Guile details">&times;</label>
+
+        <h2 id="guile-title">Guile</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Guile-Profile-Picture.png" alt="Guile portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "Go home and be a family man!" </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>American Air Force major on a mission to avenge his friend Charlie Nash’s death.</p>
+          <p><strong>Debut:</strong> 1991, Street Fighter II.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Known for his unique flat-top haircut and U.S. patriotism.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Guile-Pose.gif" alt="Guile victory pose">
+          </figure>
+          <figure>
+            <figcaption>Sonic Boom</figcaption>
+            <img src="Gif/Guile-Sonic-Boom.gif" alt="Guile performing Sonic Boom">
+          </figure>
+          <figure>
+            <figcaption>Flash Kick</figcaption>
+            <img src="Gif/Guile-Flash-Kick.gif" alt="Guile performing Flash Kick">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Ibuki card -->
+    <label class="char-card" for="ibuki-toggle">
+      <img src="Png/IbukiGallery.png" alt="ibuki">
+      <span class="char-name">Ibuki</span>
+    </label>
+    <input type="checkbox" id="ibuki-toggle" class="modal-toggle">
+
+    <!-- Ibuki popup -->
+    <section class="char-modal" aria-labelledby="ibuki-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="ibuki-toggle" class="modal-close" aria-label="Close Ibuki details">&times;</label>
+
+        <h2 id="ibuki-title">Ibuki</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Ibuki-Profile-Picture.png" alt="Ibuki portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "Ibuki on the scene!". </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Teenage ninja girl balancing life as a fighter and a student in a sleepy Japanese village.</p>
+          <p><strong>Debut:</strong> 1997, Street Fighter III: New Generation.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Known for her speed and tricky ninja moves; dislikes having to fight instead of hang out with friends.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Ibuki-Pose.gif" alt="Ibuki victory pose">
+          </figure>
+          <figure>
+            <figcaption>Kasumi Suzaku</figcaption>
+            <img src="Gif/Ibuki-Kasumi-Suzaku.gif" alt="Ibuki performing Kasumi Suzaku">
+          </figure>
+          <figure>
+            <figcaption>Raida</figcaption>
+            <img src="Gif/Ibuki-Raida.gif" alt="Ibuki performing Raida">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Sakura card -->
+    <label class="char-card" for="sakura-toggle">
+      <img src="Png/SakuraGallery.png" alt="sakura">
+      <span class="char-name">Sakura</span>
+    </label>
+    <input type="checkbox" id="sakura-toggle" class="modal-toggle">
+
+    <!-- Sakura popup -->
+    <section class="char-modal" aria-labelledby="sakura-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="sakura-toggle" class="modal-close" aria-label="Close Sakura details">&times;</label>
+
+        <h2 id="sakura-title">Sakura</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Sakura-Profile-Picture.png" alt="Sakura portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "Let's go!". </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Energetic Japanese schoolgirl who idolizes Ryu and imitates his style.</p>
+          <p><strong>Debut:</strong> 1996, Street Fighter Alpha 2.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Is a self-taught fighter; often used for comic relief and youthful energy.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Sakura-Pose.gif" alt="Sakura victory pose">
+          </figure>
+          <figure>
+            <figcaption>Shouoken</figcaption>
+            <img src="Gif/Sakura-Shouoken.gif" alt="Sakura performing Shouoken">
+          </figure>
+          <figure>
+            <figcaption>Hadouken: Her Version</figcaption>
+            <img src="Gif/Sakura-Hadouken.gif" alt="Sakura performing her version of Hadouken">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Dan card -->
+    <label class="char-card" for="dan-toggle">
+      <img src="Png/DanGallery.png" alt="dan">
+      <span class="char-name">Dan</span>
+    </label>
+    <input type="checkbox" id="dan-toggle" class="modal-toggle">
+
+    <!-- Dan popup -->
+    <section class="char-modal" aria-labelledby="dan-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="dan-toggle" class="modal-close" aria-label="Close Dan details">&times;</label>
+
+        <h2 id="dan-title">Dan</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Dan-Profile-Picture.png" alt="Dan portrait">
+          </figure>
+          <figure class="char-pose">
+            <img src="Gif/Dan-little.gif" alt="Dan pose">
+          </figure>
+          <p><strong>Catchphrase:</strong> "Saikyo-ryu!" </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Goofy, pink-gi martial artist parodying other fighting game heroes; seeks to avenge his father.</p>
+          <p><strong>Debut:</strong> 1996, Street Fighter Alpha.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Known for his intentionally weak and comedic fighting style; joke rival to Sagat.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Dan-Pose.gif" alt="Dan victory pose">
+          </figure>
+          <figure>
+            <figcaption>Gadouken</figcaption>
+            <img src="Gif/Dan-Gadouken.gif" alt="Dan performing Gadouken">
+          </figure>
+          <figure>
+            <figcaption>Taunt Moves</figcaption>
+            <img src="Gif/Dan-Taunt.gif" alt="Dan performing Taunt Moves">
+            <img src="Gif/Dan-Taunt-2.gif" alt="Dan performing Taunt Moves">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Akuma card -->
+    <label class="char-card" for="akuma-toggle">
+      <img src="Png/AkumaGallery.png" alt="akuma">
+      <span class="char-name">Akuma</span>
+    </label>
+    <input type="checkbox" id="akuma-toggle" class="modal-toggle">
+
+    <!-- Akuma popup -->
+    <section class="char-modal" aria-labelledby="akuma-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="akuma-toggle" class="modal-close" aria-label="Close Akuma details">&times;</label>
+
+        <h2 id="akuma-title">Akuma</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Akuma-Profile-Picture.png" alt="Akuma portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "I am Akuma, and I will teach you the true meaning of pain!" </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Ryu’s and Ken’s “uncle,” a brutal master of the dark arts, seeks the ultimate fight.</p>
+          <p><strong>Debut:</strong> 1994, Super Street Fighter II Turbo (secret boss).</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Known for epic boss battles; is a hidden/secret character in many games.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Akuma-Pose.gif" alt="Akuma victory pose">
+          </figure>
+          <figure>
+            <figcaption>Raging Demon</figcaption>
+            <img src="Gif/Akuma-Raging-Demon.gif" alt="Akuma performing Raging Demon">
+          </figure>
+          <figure>
+            <figcaption>Air Fireball</figcaption>
+            <img src="Gif/Akuma-Air-Fireball.gif" alt="Akuma performing Air Fireball">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Zangief card -->
+    <label class="char-card" for="zangief-toggle">
+      <img src="Png/ZangiefGallery.png" alt="zangief">
+      <span class="char-name">Zangief</span>
+    </label>
+    <input type="checkbox" id="zangief-toggle" class="modal-toggle">
+
+    <!-- Zangief popup -->
+    <section class="char-modal" aria-labelledby="zangeif-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="zangief-toggle" class="modal-close" aria-label="Close Zangief details">&times;</label>
+
+        <h2 id="zangief-title">Zangief</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Zangief-Profile-Picture.png" alt="Sagat portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "I am the strongest in the world!" </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Russian pro wrestler, proud of his strength and homeland.</p>
+          <p><strong>Debut:</strong> 1991, Street Fighter II.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>"Red Cyclone" who trains with bears in Siberia; friendly rivalry with Ryu and Honda.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Zangief-Pose.gif" alt="Zangief victory pose">
+          </figure>
+          <figure>
+            <figcaption>Spinning Piledriver</figcaption>
+            <img src="Gif/Zangief-Piledriver.gif" alt="Zangief performing Spinning Piledriver">
+          </figure>
+          <figure>
+            <figcaption>Double Lariat</figcaption>
+            <img src="Gif/Zangief-Double-Lariat.gif" alt="Zangief performing Double Lariat">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Sagat card -->
+    <label class="char-card" for="sagat-toggle">
+      <img src="Png/SagatGallery.png" alt="sagat">
+      <span class="char-name">Sagat</span>
+    </label>
+    <input type="checkbox" id="sagat-toggle" class="modal-toggle">
+
+    <!-- Sagat popup -->
+    <section class="char-modal" aria-labelledby="sagat-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="sagat-toggle" class="modal-close" aria-label="Close Sagat details">&times;</label>
+
+        <h2 id="sagat-title">Sagat</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Sagat-Profile-Picture.png" alt="Sagat portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> "Tiger!" </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Muay Thai master and former champion, initially a villain and Ryu’s main rival.</p>
+          <p><strong>Debut:</strong> 1987, Street Fighter (final boss).</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>Famous chest scar from Ryu’s “Shoryuken”.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Sagat-pose.gif" alt="Sagat victory pose">
+          </figure>
+          <figure>
+            <figcaption>Tiger Shot</figcaption>
+            <img src="Gif/Sagat-tiger-Shot.gif" alt="Sagat performing Tiger Shot">
+          </figure>
+          <figure>
+            <figcaption>Tiger Uppercut</figcaption>
+            <img src="Gif/Sagat-Tiger-Uppercut.gif" alt="Sagat performing Tiger Uppercut">
+          </figure>
+        </section>
+      </article>
+    </section>
+
+
+    <!-- Juri card -->
+    <label class="char-card" for="juri-toggle">
+      <img src="Png/JuriGallery.png" alt="juri">
+      <span class="char-name">Juri</span>
+    </label>
+    <input type="checkbox" id="juri-toggle" class="modal-toggle">
+
+    <!-- Juri popup -->
+    <section class="char-modal" aria-labelledby="juri-title" aria-modal="true" role="dialog">
+      <article class="char-modal-content">
+        <label for="juri-toggle" class="modal-close" aria-label="Close Juri details">&times;</label>
+
+        <h2 id="juri-title">Juri</h2>
+
+        <header class="char-header">
+          <figure class="char-portrait">
+            <img src="Png/Juri-Profile-Picture.png" alt="Juri portrait">
+          </figure>
+          <p><strong>Catchphrase:</strong> “I'm going to enjoy this!”. </p>
+        </header>
+
+        <section class="char-bio">
+          <h3>Short bio / origin</h3>
+          <p>Sadistic Taekwondo fighter enhanced with the “Feng Shui Engine” eye, loves chaos.</p>
+          <p><strong>Debut:</strong> 2010, Super Street Fighter IV.</p>
+        </section>
+
+        <section class="char-facts">
+          <h3>Fun fact / rivalry</h3>
+          <p>First Korean character; popular for her villainous charm and unique playstyle.</p>
+        </section>
+
+        <section class="char-moves">
+          <h3>Signature move(s)</h3>
+          <figure class="char-pose">
+            <img src="Gif/Juri-Pose.gif" alt="Juri victory pose">
+          </figure>
+          <figure>
+            <figcaption>Fireball Kick</figcaption>
+            <img src="Gif/Juri-Fireball-Kick.gif" alt="Juri performing Fireball Kick">
+          </figure>
+          <figure>
+            <figcaption>FengShui Engine</figcaption>
+            <img src="Gif/Juri-Feng-Shui-Engine.gif" alt="Juri performing FengShui Engine">
+          </figure>
+        </section>
+      </article>
+    </section>
     <!-- ...other characters... -->
   </div>
 </section>

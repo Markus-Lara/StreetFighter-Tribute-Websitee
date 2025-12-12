@@ -21,6 +21,79 @@
         <li><a href="StreetFighter-Resources.html">Resources</a></li>
       </ul>
     </nav>
+
+    <link rel="stylesheet" href="style.css">
   </header>
+
+  <main>
+  <section class="favorite-page" aria-labelledby="fav-title">
+    <h1 id="fav-title">Favorite Character: Cammy White</h1>
+
+    <!-- main Cammy content... (bio, facts list, debut info etc.) -->
+
+    <section class="favorite-actions" aria-label="Cammy extra details">
+      <!-- Deep Rivals and Relationships -->
+      <label class="info-button" for="cammy-rivals-toggle">
+        Deep Rivals and Relationships
+      </label>
+      <input type="checkbox" id="cammy-rivals-toggle" class="modal-toggle">
+
+      <!-- Cammy Over Different Games -->
+      <label class="info-button" for="cammy-games-toggle">
+        Cammy Over in Different Street Fighter Games
+      </label>
+      <input type="checkbox" id="cammy-games-toggle" class="modal-toggle">
+
+      <!-- Most Iconic Moves -->
+      <label class="info-button" for="cammy-moves-toggle">
+        Most Iconic Moves
+      </label>
+      <input type="checkbox" id="cammy-moves-toggle" class="modal-toggle">
+    </section>
+
+    <!-- Rivals popup -->
+    <section class="info-modal" aria-labelledby="cammy-rivals-title" aria-modal="true" role="dialog">
+      <article class="info-modal-content">
+        <label for="cammy-rivals-toggle" class="modal-close" aria-label="Close rivals panel">&times;</label>
+
+        <h2 id="cammy-rivals-title">Deep Rivals and Relationships</h2>
+        <p>• Longstanding connection with Chun‑Li as allies and friendly rivals.</p>
+        <p>• Complex history with M. Bison and the Dolls after breaking free from Shadaloo.</p>
+        <p>• Bonds with Delta Red teammates like Colonel Wolfman and Lita.</p>
+      </article>
+    </section>
+
+    <!-- Games popup -->
+    <section class="info-modal" aria-labelledby="cammy-games-title" aria-modal="true" role="dialog">
+      <article class="info-modal-content">
+        <label for="cammy-games-toggle" class="modal-close" aria-label="Close games panel">&times;</label>
+
+        <h2 id="cammy-games-title">Cammy in Different Street Fighter Games</h2>
+        <ul>
+          <li><strong>Super Street Fighter II (1993):</strong> debut as “Killer Bee.”</li>
+          <li><strong>Alpha series:</strong> explores her past with Shadaloo and the Dolls.</li>
+          <li><strong>Street Fighter IV &amp; V:</strong> Delta Red and later modern tournament outfits.</li>
+          <li><strong>Street Fighter 6:</strong> updated design but same fast, aggressive style.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Moves popup -->
+    <section class="info-modal" aria-labelledby="cammy-moves-title" aria-modal="true" role="dialog">
+      <article class="info-modal-content">
+        <label for="cammy-moves-toggle" class="modal-close" aria-label="Close moves panel">&times;</label>
+
+        <h2 id="cammy-moves-title">Most Iconic Moves</h2>
+        <ul>
+          <li><strong>Spiral Arrow (Cannon Drill)</strong> – sliding kick along the ground.</li>
+          <li><strong>Cannon Spike</strong> – leaping anti‑air kick.</li>
+          <li><strong>Hooligan Combination</strong> – acrobatic flip into throws and follow‑ups.</li>
+          <li><strong>Spiral/Hooligan supers</strong> in later games that chain her signature attacks.</li>
+        </ul>
+      </article>
+    </section>
+  </section>
+</main>
+
 </body>
 </html>
