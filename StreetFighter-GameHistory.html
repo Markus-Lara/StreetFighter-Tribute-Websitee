@@ -7,20 +7,50 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="logo-area">
-      <img src="Png/Main-Logo.png" alt="Street Fighter logo">
-    </div>
-
+    <!--Navigation (Will be consistently used across ALL pages)-->
     <nav class="main-nav" aria-label="Main site navigation">
       <ul>
-        <li><a href="Index.html">Home</a></li>
-        <li><a href="StreetFighter-GameHistory.html" aria-current="page">Game History</a></li>
-        <li><a href="StreetFighter-Character-Gallery.html">Character Gallery</a></li>
-        <li><a href="Favorite-Character.html">My Favorite</a></li>
-        <li><a href="StreetFighter-Fun-Extras.html">Fun/Extras</a></li>
-        <li><a href="StreetFighter-Resources.html">Resources</a></li>
+        <li>
+          <div class="logo-area">
+            <a href="Index.html">
+              <img src="Png/Main-Logo.png" alt="Street Fighter logo"> <!--Main source link to go back to home page or introduction page-->
+            </a>
+          </div>
+        </li>
+        <li class="navigation">
+          <a href="StreetFighter-GameHistory.html">
+            <img src="/Png/Frame 4.png">
+          </a>
+          <p class="nav-names">Game History</p>
+        </li>
+        <li class="navigation">
+        <a href="StreetFighter-Character-Gallery.html">
+          <img src="/Png/Frame 5.png">
+        </a>
+        <p class="nav-names">Character Gallery</p>
+        </li>
+        <li class="navigation">
+          <a href="Favorite-Character.html">
+            <img src="/Png/Frame 6.png">
+          </a>
+          <p class="nav-names">My Favorite</p>
+      </li>
+      <li class="navigation">
+        <a href="StreetFighter-Fun-Extras.html">
+          <img src="/Png/Frame 7.png">
+        </a>
+        <p class="nav-names">Fun/Extras</p>
+      </li>
+      <li class="navigation">
+      <a href="StreetFighter-Resources.html">
+        <img src="/Png/Frame 8.png">
+      </a>
+      <p class="nav-names">Resources</p>
+    </li>
       </ul>
     </nav>
+
+    <link rel="stylesheet" href="style.css">
   </header>
 
   <main>
@@ -31,11 +61,12 @@
         <ol class="timeline-list">
           <li class="timeline-item">
             <figure>
-                <a href="StreetFighterOne.html">
-                    <img src="Png/StreetFighter1.png" alt="Street Fighter logo">
-                </a>
+              <a href="StreetFighterOne.html">
+                  <img src="Png/StreetFighter1.png" alt="Street Fighter logo">
+              </a>
+              <div class="circle"></div>
               <figcaption>
-                <time datetime="1987">1987</time>
+                <span>1987</span>
               </figcaption>
             </figure>
           </li>
@@ -45,8 +76,9 @@
                 <a href="StreetFighterTwo.html">
                     <img src="Png/StreetFighter2.png" alt="Street Fighter II logo">
                 </a>
+                <div class="circle"></div>
               <figcaption>
-                <time datetime="1991">1991</time>
+                <span class="years">1991</span>
               </figcaption>
             </figure>
           </li>
@@ -56,8 +88,9 @@
                 <a href="StreetFighterAlpha.html">
                     <img src="Png/StreetFighterAlpha.png" alt="Street Fighter Alpha (Zero) logo">
                 </a>
+                <div class="circle"></div>
               <figcaption>
-                <time datetime="1995">1995</time>
+                <span class="years">1995</span>
               </figcaption>
             </figure>
           </li>
@@ -67,8 +100,9 @@
                 <a href="StreetFighterThree.html">
                     <img src="Png/StreetFighter3.png" alt="Street Fighter III: 3rd Strike logo">
                 </a>
+                <div class="circle"></div>
               <figcaption>
-                <time datetime="1999">1999</time>
+                <span class="years">1999</span>
               </figcaption>
             </figure>
           </li>
@@ -78,8 +112,9 @@
                 <a href="StreetFighterFour.html">
                     <img src="Png/StreetFighter4.png" alt="Street Fighter IV logo">
                 </a>
+                <div class="circle"></div>
               <figcaption>
-                <time datetime="2008">2008</time>
+                <span class="years">2008</span>
               </figcaption>
             </figure>
           </li>
@@ -89,8 +124,9 @@
                 <a href="StreetFighterFive.html">
                     <img src="Png/StreetFighter5.png" alt="Street Fighter V logo">
                 </a>
+              <div class="circle"></div>
               <figcaption>
-                <time datetime="2016">2016</time>
+                <span class="years">2016</span>
               </figcaption>
             </figure>
           </li>
@@ -100,8 +136,9 @@
                 <a href="StreetFighterSix.html">
                     <img src="Png/StreetFighter6.png" alt="Street Fighter 6 logo">
                 </a>
+                <div class="circle"></div>
               <figcaption>
-                <time datetime="2023">2023</time>
+                <span class="years">2023</span>
               </figcaption>
             </figure>
           </li>

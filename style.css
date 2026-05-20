@@ -1,2 +1,30 @@
 
+/* To use a custom font style. The same one from my Figma design. Mainly used for titles and main headings!! */
+@font-face {
+    font-family: 'custom-font';
+    src: url("/Typeface/SSF4 ABUKET.ttf") format("truetype");
+}
+
+/* Navigation Styles */
+ul {
+    list-style-type: none; /* To get rid of those black dots */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#hero-title {
+    font-family: 'custom-font';
+    font-size: xx-large;
+    word-spacing: 20px; /*Without this word-spacing, the words would look way to close together, don't want that! */
+}
+
+.circle {
+    background-color: #F1FF28;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F1FF28;
+    border-radius: 50%;
+}
 
