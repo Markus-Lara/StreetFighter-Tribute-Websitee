@@ -5,21 +5,108 @@
     src: url("/Typeface/SSF4 ABUKET.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: 'Fredoka';
+    src: url("/Typeface/Fredoka.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Spicy-Rice';
+    src: url("/Typeface/SpicyRice-Regular.ttf") format("truetype");
+}
+
+html {
+    height: 100%;
+}
+
 /* Navigation Styles */
 ul {
     list-style-type: none; /* To get rid of those black dots */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    width: auto;
+    height: auto;
+    background-color: black;
+    margin: 0;
 }
 
+.logo-area {
+    display: flex;
+    align-items: center;
+}
 
+.navigation {
+    width: 140px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 55px;
+    justify-content: center;
+}
+
+#red-button {
+    margin-left: 17%;
+}
+
+.nav-names {
+    margin: 0;
+    color: white;
+    font-family: 'Fredoka';
+    font-weight: 550;
+    width: auto;
+}
+
+/* Index Homepage Styling */
+.index {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Png/RyuVSAkuma.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    box-shadow: 50%;
+    min-height: 100%;
+}
 #hero-title {
     font-family: 'custom-font';
-    font-size: xx-large;
+    font-size: 3.5rem;
     word-spacing: 20px; /*Without this word-spacing, the words would look way to close together, don't want that! */
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
+.subtitle {
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.hero-subtitle {
+    font-family: 'Spicy-Rice';
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #FAE81C;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.Small-Overview {
+    width: auto;
+    height: auto;
+}
+
+.intro-panel {
+    margin: auto;
+    width: 777px;
+    height: 378px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FDC40850; /*There are two extra digits than a regular hex code because the two values control transparency!!*/
+    border-radius: 8%;
+}
 .circle {
     background-color: #F1FF28;
     width: 20px;
