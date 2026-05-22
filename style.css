@@ -16,7 +16,7 @@
 }
 
 html {
-    height: 100%;
+    height: auto; /* Without displaying the html's height, the background and the linear-gradient used to provide darkness won't fully cover the page. */
 }
 
 /* Navigation Styles */
@@ -63,10 +63,9 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    box-shadow: 50%;
-    min-height: 100%;
+    min-height: auto;
 }
-#hero-title {
+.hero-title {
     font-family: 'custom-font';
     font-size: 3.5rem;
     word-spacing: 20px; /*Without this word-spacing, the words would look way to close together, don't want that! */
@@ -88,8 +87,13 @@ ul {
     font-size: 2.5rem;
     font-weight: 500;
     color: #FAE81C;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    width: 55%;
+    height: 55%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .Small-Overview {
@@ -104,9 +108,60 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #FDC40850; /*There are two extra digits than a regular hex code because the two values control transparency!!*/
-    border-radius: 8%;
+    background-color: #FDC40870; /*There are two extra digits than a regular hex code because the two values control transparency!!*/
+    border-radius: 15px;
+    position: relative;
 }
+
+.intro-graphic {
+    position: absolute; /* Move Ryu into an exact position and not having to rely on flexbox or margin to move him up. Also doesn't affect where the text is centered */
+    top: 5%;
+    left: 3%;
+}
+
+.intro-text {
+    width: 75%;
+    height: 55%;
+    margin: auto;
+}
+
+.Description-lol {
+    font-family: 'Fredoka';
+    font-weight: 650;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+
+#footer {
+    font-family: 'Fredoka';
+    color: white;
+}
+
+/* Game History Styling Page */
+
+.history {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Png/RyuSF5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    min-height: auto;
+    background-position: center;
+}
+
+.timeline-list {
+    list-style-type: none;
+}
+
+
+
 .circle {
     background-color: #F1FF28;
     width: 20px;
