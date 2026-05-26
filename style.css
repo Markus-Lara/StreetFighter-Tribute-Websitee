@@ -15,6 +15,11 @@
     src: url("/Typeface/SpicyRice-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: 'Archivo';
+    src: url("/Typeface/ArchivoBlack.ttf") format("truetype");
+}
+
 html {
     height: auto; /* Without displaying the html's height, the background and the linear-gradient used to provide darkness won't fully cover the page. */
 }
@@ -158,9 +163,17 @@ ul {
 
 .timeline-list {
     list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-
+.yuppy {
+    height: 280px;
+    width: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .circle {
     background-color: #F1FF28;
@@ -170,3 +183,36 @@ ul {
     border-radius: 50%;
 }
 
+.timeline-item {
+    display: flex;
+    justify-content: center;
+}
+
+.Street-Fighter-lol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.years {
+    font-family: 'Archivo';
+    color: white;
+    font-size: 2.5rem;
+}
+
+.yellow-line {
+    background-color:#F1FF28;
+    width: 1500px;
+    height: 5px;
+    position: absolute;
+    top: 63%;
+    left: 14%;
+}
+
+#number-two {
+    position: absolute;
+    width: 1000px;
+    top: 101.5%;
+}
