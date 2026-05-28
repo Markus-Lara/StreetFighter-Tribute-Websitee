@@ -2,27 +2,25 @@
 /* To use a custom font style. The same one from my Figma design. Mainly used for titles and main headings!! */
 @font-face {
     font-family: 'custom-font';
-    src: url("/Typeface/SSF4 ABUKET.ttf") format("truetype");
+    src: url("./Typeface/SSF4 ABUKET.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Fredoka';
-    src: url("/Typeface/Fredoka.ttf") format("truetype");
+    src: url("./Typeface/Fredoka.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Spicy-Rice';
-    src: url("/Typeface/SpicyRice-Regular.ttf") format("truetype");
+    src: url("./Typeface/SpicyRice-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'Archivo';
-    src: url("/Typeface/ArchivoBlack.ttf") format("truetype");
+    src: url("./Typeface/ArchivoBlack.ttf") format("truetype");
 }
 
-html {
-    height: auto; /* Without displaying the html's height, the background and the linear-gradient used to provide darkness won't fully cover the page. */
-}
+
 
 /* Navigation Styles */
 ul {
@@ -64,11 +62,9 @@ ul {
 
 /* Index Homepage Styling */
 .index {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Png/RyuVSAkuma.svg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Png/RyuVSAkuma.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
-    min-height: auto;
 }
 .hero-title {
     font-family: 'custom-font';
@@ -153,11 +149,10 @@ ul {
 /* Game History Styling Page */
 
 .history {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Png/RyuSF5.svg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Png/RyuSF5.svg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    min-height: auto;
     background-position: center;
 }
 
@@ -215,4 +210,45 @@ ul {
     position: absolute;
     width: 1000px;
     top: 101.5%;
+}
+
+/* Street Fighter One (Timeline) Stylization */
+
+.SF1 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Png/StreetFighterOneBackground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.game-intro-text {
+    background-color: #FDC40870;
+    border-radius: 50px;
+    height: 350px;
+    width: 650px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.game-page.game-sf1 {
+    display: flex;
+    height: 500px;
+    align-items: flex-start;
+    gap: 100px
+}
+
+#SF1-Description {
+    font-family: 'Fredoka';
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 650;
+    text-align: center;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.game-logo {
 }
