@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Street Fighter II</title>
 </head>
-<body>
+<body class="SF2">
   <header class="site-header">
     <!--Navigation (Will be consistently used across ALL pages)-->
     <nav class="main-nav" aria-label="Main site navigation">
@@ -55,42 +55,40 @@
 
 <main>
   <section class="game-page game-sf2" aria-labelledby="sf2-title">
-    <header class="game-intro">
         <a class="Red-Back-Button" href="StreetFighter-GameHistory.html" aria-label="Go to Street Fighter Game History">
             <img src="Png/Red-Back-Button.png" alt="Next">
         </a>
       <div class="game-logo">
-        <img src="Png/StreetFighter2.png" alt="Street Fighter II logo">
+        <img src="Png/StreetFighter2.png" alt="Street Fighter II logo" id="SF2-Logo">
       </div>
-
-      <div class="game-intro-text">
-        <h1 id="sf2-title">Street Fighter II (1991)</h1>
-        <p>
-          Street Fighter II exploded in 1991, turning arcades into competitive arenas and
-          defining the modern fighting game with combos, special moves, and a global cast
-          of World Warriors.[web:167][web:179]
+    <section class="Summary-Cards-Grid">
+      <div class="summary-card" id="summary-card-1">
+        <h2 class="sf2-description">Street Fighter II (1991)</h1>
+        <p class="SF2-text-stylization">
+          The fighting game revolution: Street Fighter II launched in 1991 and transformed gaming forever, turning arcades worldwide into competitive battlegrounds. With fast-paced controls, colorful characters, and the birth of the combo system, this game set the gold standard for all future fighting games.
         </p>
       </div>
 
-      <section class="game-summary-cards" aria-label="Street Fighter II summary">
-        <article class="summary-card">
-          <h2>Street Fighter II</h2>
-          <p>
-            Fast‑paced matches, colorful stages, and tight controls set the gold standard
-            for future fighting games.[web:167][web:171]
-          </p>
+        <article class="summary-card" id="summary-card-2">
+          <ol class="SF2-Bullet-Points">
+            <li class="SF2-text-stylization">Released in arcades in 1991; later on home consoles.</li>
+            <li class="SF2-text-stylization">Introduced eight playable World Warriors, each with a signature stage.</li>
+            <li class="SF2-text-stylization">Popularized strategic combos and competitive multiplayer.</li>
+          </ol>
         </article>
 
-        <article class="summary-card">
-          <h2>Classic Moments &amp; Milestones</h2>
-          <p>
-            Popularized strategic combos, mirror matches, and serious versus play, sparking
-            the global fighting game craze.[web:167][web:173]
-          </p>
+        <article class="summary-card" id="summary-card-3">
+          <h2 class="sf2-description">Classic Moments &amp; Milestones</h2>
+          <ol class="SF2-Bullet-Points">
+            <li class="SF2-text-stylization">The invention of combos—allowing players to chain attacks for bigger damage.</li>
+            <li class="SF2-text-stylization">Unique international settings and diverse cast: Ryu, Ken, Chun-Li, Guile, Blanka, Dhalsim, Zangief, E. Honda. (Original 8 cast, more characters in “Super Street Fighter: The New Challengers” like -Cammy, Dee Jay, Fei Long, and T. Hawk in 1993)</li>
+            <li class="SF2-text-stylization">Sparked the global fighting game craze, inspiring tournaments and rival games.</li>
+          </ol>
         </article>
-      </section>
-    </header>
-
+    </section>
+  </section>
+    
+  <section class="Timeline-Characters">
     <section class="game-versions" aria-label="Main Street Fighter II versions">
       <h2 class="section-title">Main Street Fighter II Versions</h2>
 
@@ -120,38 +118,39 @@
       <div class="roster-grid">
         <figure>
           <img src="Png/Ryu-SFII.png" alt="Ryu">
-          <figcaption>Ryu</figcaption>
+          <figcaption class="SF2-Character-Names">Ryu</figcaption>
         </figure>
         <figure>
           <img src="Png/Ken-SFII.png" alt="Ken">
-          <figcaption>Ken</figcaption>
+          <figcaption class="SF2-Character-Names">Ken</figcaption>
         </figure>
         <figure>
           <img src="Png/E.Honda-SFII.png" alt="E. Honda">
-          <figcaption>E. Honda</figcaption>
+          <figcaption class="SF2-Character-Names">E. Honda</figcaption>
         </figure>
         <figure>
           <img src="Png/Blanka-SFII.png" alt="Blanka">
-          <figcaption>Blanka</figcaption>
+          <figcaption class="SF2-Character-Names">Blanka</figcaption>
         </figure>
         <figure>
           <img src="Png/Zangief-SFII.png" alt="Zangief">
-          <figcaption>Zangief</figcaption>
+          <figcaption class="SF2-Character-Names">Zangief</figcaption>
         </figure>
         <figure>
           <img src="Png/Guile-SFII.png" alt="Guile">
-          <figcaption>Guile</figcaption>
+          <figcaption class="SF2-Character-Names">Guile</figcaption>
         </figure>
         <figure>
           <img src="Png/Dhalsim-SFII.png" alt="Dhalsim">
-          <figcaption>Dhalsim</figcaption>
+          <figcaption class="SF2-Character-Names">Dhalsim</figcaption>
         </figure>
         <figure>
           <img src="Png/Chun-Li-SFII.png" alt="Chun-Li">
-          <figcaption>Chun‑Li</figcaption>
+          <figcaption class="SF2-Character-Names">Chun‑Li</figcaption>
         </figure>
       </div>
     </section>
+  </Section>
 
     <nav class="game-pagination" aria-label="Street Fighter game navigation">
   <a class="game-arrow prev" href="StreetFighterOne.html" aria-label="Back to Game History">
@@ -162,7 +161,7 @@
     <img src="Png/RightArrow.png" alt="Next">
   </a>
 </nav>
-  </section>
+</section>
 </main>
 
 </body>
