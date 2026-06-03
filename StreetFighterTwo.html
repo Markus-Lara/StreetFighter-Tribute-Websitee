@@ -54,6 +54,19 @@
   </header>
 
 <main>
+
+  <nav class="game-pagination" aria-label="Street Fighter game navigation">
+    <a class="game-arrow" href="StreetFighterAlpha.html" aria-label="Go to Street Fighter II">
+      <img src="Png/RightArrow.png" alt="Next" class="yellow-nav-button">
+    </a>
+  </nav>
+  
+  <nav class="game-pagination" aria-label="Street Fighter game navigation" id="left-arrows">
+    <a class="game-arrow" href="StreetFighterOne.html" aria-label="Back to Game History">
+      <img src="Png/LeftArrow.png" alt="Back" class="yellow-nav-button">
+    </a>
+  </nav>
+
   <section class="game-page game-sf2" aria-labelledby="sf2-title">
         <a class="Red-Back-Button" href="StreetFighter-GameHistory.html" aria-label="Go to Street Fighter Game History">
             <img src="Png/Red-Back-Button.png" alt="Next">
@@ -93,21 +106,33 @@
       <h2 class="section-title">Main Street Fighter II Versions</h2>
 
       <ol class="version-timeline">
-        <li>
+        <li class="SF2-Timeline">
           <time datetime="1991">1991</time>
+          <div class="dot" id="with-line"></div>
+        <div class="invisible-box">
           <img src="Png/StreetFighterII-TheWorldWarrior.png" alt="Street Fighter II: The World Warrior logo">
+        </div>
         </li>
-        <li>
+        <li class="SF2-Timeline">
           <time datetime="1992">1992</time>
+          <div class="dot" id="with-line"></div>
+        <div class="invisible-box">
           <img src="Png/StreetFighterII-ChampionEdition.png" alt="Street Fighter II: Champion Edition logo">
+        </div>
         </li>
-        <li>
+        <li class="SF2-Timeline">
           <time datetime="1992">1992</time>
+          <div class="dot" id="with-line"></div>
+        <div class="invisible-box">
           <img src="Png/StreetFighterII-Turbo.png" alt="Street Fighter II: Hyper Fighting logo">
+        </div>
         </li>
-        <li>
+        <li class="SF2-Timeline">
           <time datetime="1993">1993</time>
+          <div class="dot"></div>
+        <div class="invisible-box">
           <img src="Png/StreetFighterII-TheNewChallengers.png" alt="Super Street Fighter II: The New Challengers logo">
+        </div>
         </li>
       </ol>
     </section>
@@ -150,16 +175,8 @@
         </figure>
       </div>
     </section>
-  </Section>
+  </section>
 
-    <nav class="game-pagination" aria-label="Street Fighter game navigation">
-  <a class="game-arrow prev" href="StreetFighterOne.html" aria-label="Back to Game History">
-    <img src="Png/LeftArrow.png" alt="Back">
-  </a>
-
-  <a class="game-arrow next" href="StreetFighterAlpha.html" aria-label="Go to Street Fighter II">
-    <img src="Png/RightArrow.png" alt="Next">
-  </a>
 </nav>
 </section>
 </main>

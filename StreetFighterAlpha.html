@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body class="Alpha">
   <header class="site-header">
     <!--Navigation (Will be consistently used across ALL pages)-->
     <nav class="main-nav" aria-label="Main site navigation">
@@ -54,12 +54,27 @@
   </header>
   
     <main>
+      <nav class="game-pagination" aria-label="Street Fighter game navigation">
+        <a class="game-arrow" href="StreetFighterAlpha.html" aria-label="Go to Street Fighter II">
+          <img src="Png/RightArrow.png" alt="Next" class="yellow-nav-button">
+        </a>
+      </nav>
+      
+      <nav class="game-pagination" aria-label="Street Fighter game navigation" id="left-arrows">
+        <a class="game-arrow" href="StreetFighterOne.html" aria-label="Back to Game History">
+          <img src="Png/LeftArrow.png" alt="Back" class="yellow-nav-button">
+        </a>
+      </nav>
+
     <section class="game-page game-alpha" aria-labelledby="alpha-title">
-      <header class="game-intro">
+      <a class="Red-Back-Button" href="StreetFighter-GameHistory.html" aria-label="Go to Street Fighter Game History">
+        <img src="Png/Red-Back-Button.png" alt="Next">
+      </a>
+      
         <div class="game-logo">
           <img src="Png/StreetFighterAlpha.png" alt="Street Fighter Alpha logo">
         </div>
-
+      <section class="SF-Alpha-Cards"
         <div class="game-intro-text">
           <h1 id="alpha-title">Street Fighter Alpha (1995–1998)</h1>
           <p>
@@ -86,7 +101,8 @@
             </ul>
           </article>
         </section>
-      </header>
+    </section>
+    </section>
 
       <section class="game-versions" aria-label="Main Street Fighter Alpha games">
         <h2 class="section-title">Main Street Fighter Alpha Games</h2>
@@ -131,15 +147,6 @@
           </figure>
         </div>
       </section>
-
-      <nav class="game-pagination" aria-label="Street Fighter game navigation">
-        <a class="game-arrow prev" href="StreetFighterTwo.html" aria-label="Go to Street Fighter II">
-          <img src="Png/LeftArrow.png" alt="Back">
-        </a>
-        <a class="game-arrow next" href="StreetFighterThree.html" aria-label="Go to Street Fighter III">
-          <img src="Png/RightArrow.png" alt="Next">
-        </a>
-      </nav>
     </section>
   </main>
 

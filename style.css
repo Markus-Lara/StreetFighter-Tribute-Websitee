@@ -20,6 +20,11 @@
     src: url("./Typeface/ArchivoBlack.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: 'ABZ';
+    src: url("./Typeface/ABeeZee-Regular.ttf") format("truetype");
+}
+
 
 /* Navigation Styles */
 ul {
@@ -64,6 +69,7 @@ ul {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Png/RyuVSAkuma.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto;
 }
 .hero-title {
     font-family: 'custom-font';
@@ -217,6 +223,7 @@ ul {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Png/StreetFighterOneBackground.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto;
     height: auto;
     padding-bottom: 100px;
 }
@@ -237,7 +244,9 @@ ul {
     display: flex;
     height: 500px;
     align-items: flex-start;
-    gap: 80px
+    gap: 80px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 #SF1-Description {
@@ -308,10 +317,14 @@ ul {
 }
 
 .game-pagination {
-    height: 200px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 91%;
+}
+
+#left-arrows {
+    position: absolute;
+    left: 2.5%;
 }
 
 .yellow-nav-button {
@@ -323,15 +336,18 @@ ul {
 .SF2 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Gif/Guile-Stage.gif);
     background-repeat: no-repeat;
+    margin: auto;
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 150px
 }
 
 .game-page.game-sf2 {
     display: flex;
-    height: 500px;
+    height: 570px;
     align-items: flex-start;
-    gap: 125px
+    gap: 125px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 
@@ -393,13 +409,98 @@ ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    background-color: #30F7FE70;
+    border-radius: 25px;
 }
 
 .Timeline-Characters {
-    display: flex;
+   display: flex;
+   justify-content: end;
+   margin-right: 250px;
 }
 
 .SF2-Character-Names {
     display: flex;
     justify-content: center;
+    font-family: 'Archivo';
+    color: white;
+    font-size: 1.3rem;
 }
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'ABZ';
+    color: #50E8FF;
+}
+
+.game-roster {
+    border-radius: 25px;
+    width: 875px;
+    display: grid;
+    place-self: center;
+}
+
+.version-timeline {
+    list-style: none;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #50E8FF;
+    border-radius: 50%;
+}
+
+#with-line::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 200px;
+    background-color: #50E8FF;
+    top: 100px;
+    margin-left: 5px;
+    border-radius: 2px;
+    
+}
+
+time[datetime] {
+    font-family: 'Archivo';
+    color: white;
+    font-size: 2rem;
+}
+
+.SF2-Timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    position: relative;
+}
+
+.invisible-box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-versions {
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+/* Street Fighter Timeline (Alpha) Stylization */
+.Alpha {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Gif/StreetFighterAlpha.gif);
+    background-repeat: no-repeat;
+    margin: auto;
+    height: auto;
+    background-size: cover;
+    padding-bottom: 100px;
+    background-position: center;
+}
+
