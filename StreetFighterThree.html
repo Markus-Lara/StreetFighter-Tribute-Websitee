@@ -1,168 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Street Fighter III</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Fighter III</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="SF3">
   <header class="site-header">
-    <!--Navigation (Will be consistently used across ALL pages)-->
     <nav class="main-nav" aria-label="Main site navigation">
       <ul>
         <li class="logo-area">
           <div>
             <a href="Index.html">
-              <img src="Png/Main-Logo.png" alt="Street Fighter logo"> <!--Main source link to go back to home page or introduction page-->
+              <img src="Png/Main-Logo.png" alt="Street Fighter logo">
             </a>
           </div>
         </li>
+
         <li class="navigation" id="red-button">
           <a href="StreetFighter-GameHistory.html">
-            <img src="./Png/Frame 4.png">
+            <img src="./Png/Frame 4.png" alt="Game History">
           </a>
           <p class="nav-names">Game History</p>
         </li>
+
         <li class="navigation">
-        <a href="StreetFighter-Character-Gallery.html">
-          <img src="./Png/Frame 5.png">
-        </a>
-        <p class="nav-names" id="blue-bttn">Character Gallery</p>
+          <a href="StreetFighter-Character-Gallery.html">
+            <img src="./Png/Frame 5.png" alt="Character Gallery">
+          </a>
+          <p class="nav-names" id="blue-bttn">Character Gallery</p>
         </li>
+
         <li class="navigation">
           <a href="Favorite-Character.html">
-            <img src="./Png/Frame 6.png">
+            <img src="./Png/Frame 6.png" alt="My Favorite">
           </a>
           <p class="nav-names">My Favorite</p>
-      </li>
-      <li class="navigation">
-        <a href="StreetFighter-Fun-Extras.html">
-          <img src="./Png/Frame 7.png">
-        </a>
-        <p class="nav-names">Fun/Extras</p>
-      </li>
-      <li class="navigation">
-      <a href="StreetFighter-Resources.html">
-        <img src="./Png/Frame 8.png">
+        </li>
+
+        <li class="navigation">
+          <a href="StreetFighter-Fun-Extras.html">
+            <img src="./Png/Frame 7.png" alt="Fun Extras">
+          </a>
+          <p class="nav-names">Fun/Extras</p>
+        </li>
+
+        <li class="navigation">
+          <a href="StreetFighter-Resources.html">
+            <img src="./Png/Frame 8.png" alt="Resources">
+          </a>
+          <p class="nav-names">Resources</p>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="sf3-main-wrapper">
+    <nav class="game-pagination" aria-label="Street Fighter game navigation">
+      <a class="game-arrow" href="StreetFighterFour.html" aria-label="Go to Street Fighter Four">
+        <img src="Png/RightArrow.png" alt="Next" class="yellow-nav-button">
       </a>
-      <p class="nav-names">Resources</p>
-    </li>
-    </ul>
     </nav>
 
-    <link rel="stylesheet" href="style.css">
-  </header>
-  
-<main>
-  <nav class="game-pagination" aria-label="Street Fighter game navigation">
-    <a class="game-arrow" href="StreetFighterAlpha.html" aria-label="Go to Street Fighter II">
-      <img src="Png/RightArrow.png" alt="Next" class="yellow-nav-button">
-    </a>
-  </nav>
-  
-  <nav class="game-pagination" aria-label="Street Fighter game navigation" id="left-arrows">
-    <a class="game-arrow" href="StreetFighterOne.html" aria-label="Back to Game History">
-      <img src="Png/LeftArrow.png" alt="Back" class="yellow-nav-button">
-    </a>
-  </nav>
-  
-  <section class="game-page game-sf3" aria-labelledby="sf3-title">
-    <header class="game-intro">
+    <nav class="game-pagination" aria-label="Street Fighter game navigation" id="left-arrows">
+      <a class="game-arrow" href="StreetFighterAlpha.html" aria-label="Go to Street Fighter Alpha">
+        <img src="Png/LeftArrow.png" alt="Back" class="yellow-nav-button">
+      </a>
+    </nav>
+
+    <section class="game-page game-sf3" aria-labelledby="sf3-title">
+      <a class="Red-Back-Button" href="StreetFighter-GameHistory.html" aria-label="Go to Street Fighter Game History">
+        <img src="Png/Red-Back-Button.png" alt="Back">
+      </a>
+
       <div class="game-logo">
-        <img src="Png/StreetFighter3.png" alt="Street Fighter III: 3rd Strike logo">
+        <img src="Png/StreetFighter3.png" alt="Street Fighter III logo" id="SF3-Logo">
       </div>
 
-      <div class="game-intro-text">
-        <h1 id="sf3-title">Street Fighter III (New Generation – 3rd Strike)</h1>
-        <p>
-          Street Fighter III introduced a new generation of fighters, a deep parry system,
-          and some of the most advanced 2D animation in the series, culminating in 3rd
-          Strike’s highly regarded competitive gameplay.
-        </p>
-      </div>
-
-      <section class="game-summary-cards" aria-label="Street Fighter III highlights">
-        <article class="summary-card">
-          <h2>Major Innovations</h2>
-          <ul>
-            <li>Parry system for precise counterplay and defense.</li>
-            <li>Advanced hand‑drawn sprite animation and fluid character motion.</li>
-            <li>New cast led by Alex, with Gill as the powerful final boss.</li>
-          </ul>
+      <section class="Summary-Cards-Grid SF3-summary-grid">
+        <article class="summary-card-sf3" id="summary-card-sf3-1">
+          <h2 class="sf3-description" id="sf3-title">Major Innovations</h2>
+          <ol class="SF3-Bullet-Points">
+            <li class="SF3-text-stylization">Parry system—allowing precise counterplay and defensive options.</li>
+            <li class="SF3-text-stylization">Advanced animation and character motion (hand-drawn sprite art).</li>
+            <li class="SF3-text-stylization">Introduction of new heroes: Alex, Dudley, Ibuki, Elena, and the powerful final boss Gill.</li>
+          </ol>
         </article>
 
-        <article class="summary-card">
-          <h2>Classic Moments &amp; Legacy</h2>
-          <ul>
-            <li>
-              Evo Moment #37 – Daigo’s legendary full parry against Justin Wong’s Chun‑Li
-              in 3rd Strike.
-            </li>
-            <li>
-              3rd Strike became a cult favorite and is still considered one of the
-              strongest competitive 2D fighters ever made.
-            </li>
-          </ul>
+        <article class="summary-card-sf3" id="summary-card-sf3-2">
+          <h2 class="sf3-description">Classic Moments &amp; Milestones</h2>
+          <ol class="SF3-Bullet-Points">
+            <li class="SF3-text-stylization">The legendary EVO Moment #37 (Daigo’s full parry against Justin Wong).</li>
+            <li class="SF3-text-stylization">Focus on new world warriors, with only Ryu and Ken returning from the original cast.</li>
+          </ol>
         </article>
       </section>
-    </header>
-
-    <section class="game-versions" aria-label="Main Street Fighter III games">
-      <h2 class="section-title">Main Street Fighter III Games</h2>
-      <ol class="version-timeline">
-        <li>
-          <time datetime="1997">1997</time>
-          <img src="Png/SF3NewGeneration.png" alt="Street Fighter III: New Generation logo">
-        </li>
-        <li>
-          <time datetime="1997">1997</time>
-          <img src="Png/SF32ndImpact.png" alt="Street Fighter III: 2nd Impact logo">
-        </li>
-        <li>
-          <time datetime="1999">1999</time>
-          <img src="Png/StreetFighter3.png" alt="Street Fighter III: 3rd Strike logo">
-        </li>
-      </ol>
     </section>
 
-    <section class="game-roster" aria-label="New main characters in Street Fighter III">
-      <h2 class="section-title">New Main Character Roster</h2>
-      <div class="roster-grid">
-        <figure>
-          <img src="Png/SFAlex3.png" alt="Alex">
-          <figcaption>Alex</figcaption>
-        </figure>
-        <figure>
-          <img src="Png/SF3Dudley.png" alt="Dudley">
-          <figcaption>Dudley</figcaption>
-        </figure>
-        <figure>
-          <img src="Png/SF3Elena.png" alt="Elena">
-          <figcaption>Elena</figcaption>
-        </figure>
-        <figure>
-          <img src="Png/SF3Ibuki.png" alt="Ibuki">
-          <figcaption>Ibuki</figcaption>
-        </figure>
-        <figure>
-          <img src="Png/SF3Gill.png" alt="Gill">
-          <figcaption>Gill (Main Antagonist)</figcaption>
-        </figure>
-      </div>
-    </section>
+    <section class="SF3-Lower-Layout">
+      <section class="game-versions" aria-label="Main Street Fighter III games" id="sf3-versions">
+        <h2 class="section-title" id="SF3-text">Main Street Fighter III</h2>
 
-    <section class="game-moment" aria-label="Iconic Evo Moment 37">
-      <h2 class="section-title">Iconic Evo Moment #37</h2>
-      <figure class="moment-card">
-        <img src="Gif/EVO-37.gif" alt="Evo Moment 37 from Street Fighter III: 3rd Strike">
-        <figcaption>
-          Daigo Umehara’s famous full parry against Justin Wong’s Chun‑Li Super Art at
-          Evo 2004, one of the most celebrated moments in fighting game history.
-        </figcaption>
-      </figure>
-    </section>
-  </section>
-</main>
+        <ol class="version-timeline">
+          <li class="SF3-Timeline">
+            <time datetime="1997">1997</time>
+            <div class="dot-sf3 with-line-sf3"></div>
+            <div class="invisible-box">
+              <img src="Png/SF3NewGeneration.png" alt="Street Fighter III New Generation logo">
+            </div>
+          </li>
 
+          <li class="SF3-Timeline">
+            <time datetime="1997">1997</time>
+            <div class="dot-sf3 with-line-sf3"></div>
+            <div class="invisible-box">
+              <img src="Png/SF32ndImpact.png" alt="Street Fighter III 2nd Impact logo">
+            </div>
+          </li>
+
+          <li class="SF3-Timeline">
+            <time datetime="1999">1999</time>
+            <div class="dot-sf3"></div>
+            <div class="invisible-box">
+              <img src="Png/StreetFighter3.png" alt="Street Fighter III 3rd Strike logo">
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="game-roster-sf3" aria-label="New main characters in Street Fighter III">
+        <h2 class="section-title" id="SF3-text">New Main Character(s) Roster</h2>
+
+        <div class="roster-grid-sf3" id="SF3-Roster">
+          <figure>
+            <img src="Png/SFAlex3.png" alt="Alex">
+            <figcaption class="SF3-Character-Names">Alex</figcaption>
+          </figure>
+
+          <figure>
+            <img src="Png/SF3Dudley.png" alt="Dudley">
+            <figcaption class="SF3-Character-Names">Dudley</figcaption>
+          </figure>
+
+          <figure>
+            <img src="Png/SF3Elena.png" alt="Elena">
+            <figcaption class="SF3-Character-Names">Elena</figcaption>
+          </figure>
+
+          <figure>
+            <img src="Png/SF3Ibuki.png" alt="Ibuki">
+            <figcaption class="SF3-Character-Names">Ibuki</figcaption>
+          </figure>
+
+          <figure>
+            <img src="Png/SF3Gill.png" alt="Gill">
+            <figcaption class="SF3-Character-Names">Gill (Main Antagonist)</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="game-moment-sf3" aria-label="Iconic Evo Moment 37">
+        <h2 class="section-title" id="SF3-text">Iconic Evo Moment #37</h2>
+
+        <div class="sf3-moment-box">
+          <img src="Gif/EVO-37.gif" alt="Evo Moment 37 from Street Fighter III">
+        </div>
+      </section>
+    </section>
+  </main>
 </body>
 </html>

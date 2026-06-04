@@ -345,7 +345,7 @@ ul {
     display: flex;
     height: 570px;
     align-items: flex-start;
-    gap: 125px;
+    gap: 100px;
     margin-bottom: 30px;
     margin-top: 30px;
 }
@@ -437,8 +437,7 @@ ul {
 .game-roster {
     border-radius: 25px;
     width: 875px;
-    display: grid;
-    place-self: center;
+    
 }
 
 .version-timeline {
@@ -504,3 +503,399 @@ time[datetime] {
     background-position: center;
 }
 
+.game-page.game-alpha {
+    display: flex;
+    height: 570px;
+    align-items: flex-start;
+    gap: 100px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.summary-card-alpha {
+    background-color: #B443FF70;
+    border-radius: 50px;
+    height: 300px;
+    width: 550px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+#summary-card-alpha-1 {
+    height: 220px;
+}
+
+#summary-card-alpha-2 {
+    height: 170px;
+}
+
+#summary-card-alpha-3 {
+    display: grid;
+    grid-column: span 2;
+    height: 200px;
+}
+
+#fix-bug {
+    display: flex;
+    justify-content: center;
+}
+
+#SF-Alpha {
+    background-color: #B443FF70;
+}
+
+#SF-Alpha-text {
+    color: #B443FF;
+}
+
+.dot-alpha {
+    width: 15px;
+    height: 15px;
+    background-color: #FA45CD;
+    border-radius: 50%;
+}
+
+#with-line-alpha::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 200px;
+    background-color: #FA45CD;
+    top: 100px;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+.roster-grid-alpha {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 25px;
+    place-self: center;
+    justify-items: center;
+}
+
+.game-roster-alpha {
+    margin-left: 30%;
+}
+
+figure {
+    display: grid;
+    place-items: center;
+}
+
+/* Street Fighter III Stylization */
+.SF3 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)), url(./Gif/StreetFighterThreeBackground.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+.sf3-main-wrapper {
+    position: relative;
+    min-height: 760px;
+    width: 100%;
+}
+
+/* Navigation arrows - aligned like your other pages */
+.SF3 .game-pagination {
+    position: absolute;
+    top: 58%;
+    left: 91%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.SF3 #left-arrows {
+    position: absolute;
+    left: 2.5%;
+    top: 58%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.yellow-nav-button {
+    height: 130px;
+    width: 130px;
+}
+
+/* Top area */
+.game-page.game-sf3 {
+    display: flex;
+    height: 430px;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.SF3 .game-logo {
+    margin-top: 70px;
+    margin-right: 35px;
+}
+
+#SF3-Logo {
+    width: 270px;
+    height: auto;
+}
+
+.SF3-summary-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 35px;
+    margin-top: 10px;
+}
+
+.summary-card-sf3 {
+    background-color: #4D9FFF70;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 20px 24px;
+}
+
+#summary-card-sf3-1 {
+    width: 620px;
+    min-height: 210px;
+}
+
+#summary-card-sf3-2 {
+    width: 420px;
+    min-height: 210px;
+}
+
+.sf3-description {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fredoka';
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.SF3-Bullet-Points {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.SF3-text-stylization {
+    font-family: 'Fredoka';
+    font-size: 1.15rem;
+    font-weight: 650;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Lower layout */
+.SF3-Lower-Layout {
+    width: 78%;
+    margin: -30px auto 0;
+    display: grid;
+    grid-template-columns: 220px 460px 320px;
+    gap: 55px;
+    align-items: start;
+    justify-content: center;
+}
+
+/* Shared SF3 section titles */
+#SF3-text {
+    color: #3458FF;
+    text-shadow: 2px 2px 0px black;
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Timeline */
+#sf3-versions {
+    position: static;
+    width: 100%;
+    margin-top: 55px;
+}
+
+#sf3-versions .section-title {
+    text-align: center;
+}
+
+#sf3-versions .version-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.SF3-Timeline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 18px;
+    position: relative;
+    margin-bottom: 26px;
+}
+
+#sf3-versions time {
+    min-width: 78px;
+    font-family: 'Archivo';
+    color: white;
+    font-size: 2rem;
+}
+
+.dot-sf3 {
+    width: 15px;
+    height: 15px;
+    background-color: #57B8FF;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.with-line-sf3::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 150px;
+    background-color: #57B8FF;
+    top: 15px;
+    left: 5px;
+    border-radius: 2px;
+}
+
+#sf3-versions .invisible-box {
+    width: 145px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#sf3-versions .invisible-box img {
+    max-width: 130px;
+    height: auto;
+}
+
+/* Roster */
+.game-roster-sf3 {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.game-roster-sf3 .section-title {
+    text-align: center;
+}
+
+.roster-grid-sf3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: end;
+    gap: 12px 8px;
+    background-color: #4D9FFF70;
+    border-radius: 25px;
+    padding: 18px 12px;
+}
+
+.roster-grid-sf3 figure {
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+#SF3-Roster img {
+    max-width: 95px;
+    height: auto;
+}
+
+.SF3-Character-Names {
+    display: flex;
+    justify-content: center;
+    font-family: 'Archivo';
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 4px;
+}
+
+/* Evo moment */
+.game-moment-sf3 {
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-moment-sf3 .section-title {
+    margin-bottom: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+.sf3-moment-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sf3-moment-box img {
+    width: 100%;
+    max-width: 370px;
+    border-radius: 18px;
+}
+
+/* Optional figure cleanup */
+.SF3 figure {
+    display: grid;
+    place-items: center;
+}
+
+/* Mobile safety */
+@media (max-width: 1200px) {
+    .SF3-Lower-Layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin: 20px auto 0;
+        width: 90%;
+    }
+
+    #sf3-versions,
+    .game-roster-sf3,
+    .game-moment-sf3 {
+        margin-top: 0;
+    }
+
+    .SF3-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #summary-card-sf3-1,
+    #summary-card-sf3-2 {
+        width: 100%;
+    }
+
+    .game-page.game-sf3 {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .sf3-moment-box img {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .SF3 .game-pagination,
+    .SF3 #left-arrows {
+        position: static;
+        transform: none;
+    }
+}
